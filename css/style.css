@@ -673,14 +673,28 @@ body {
 }
 
 .change {
-	animation-name: change;
+	-webkit-animation-name: change;
+	        animation-name: change;
+}
+
+@-webkit-keyframes change {
+	from {
+		-webkit-transition: translateX(0px);
+		transition: translateX(0px);
+	}
+	to {
+		-webkit-transition: translateX(620px);
+		transition: translateX(620px);
+	}
 }
 
 @keyframes change {
 	from {
+		-webkit-transition: translateX(0px);
 		transition: translateX(0px);
 	}
 	to {
+		-webkit-transition: translateX(620px);
 		transition: translateX(620px);
 	}
 }
@@ -1151,7 +1165,8 @@ body {
 	width: 240px;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .services-navigation li::after {
@@ -1213,7 +1228,8 @@ body {
 	width: 620px;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .service-delivery {
@@ -2740,9 +2756,11 @@ body {
 	top: 2350px;
 	left: 50%;
 	width: 940px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	margin-left: -470px;
-	box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.5);
+	-webkit-box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.5);
+	        box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.5);
 
 }
 
