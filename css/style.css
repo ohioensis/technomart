@@ -1,0 +1,2751 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #000000;
+}
+
+/*Хедер*/
+
+.index-header {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 60px;
+	background-color: #f1f5f7;
+}
+
+.container {
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+/*Верхняя строчка хедера*/
+
+.header-top {
+	margin-bottom: 46px;
+	color: #ffffff;
+	background-color: #293449;
+}
+
+.header-top .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.header-title {
+	display: block;
+	width: 220px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	margin-bottom: -5px;
+	padding: 0;
+	font-size: 0;	
+}
+
+.header-title a {
+	display: block;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 220px;
+	padding-left: 57px;
+	padding-top: 11px;
+	padding-bottom: 7px;	
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-bottom: 5px solid #b52933;	
+}
+
+.header-title a:hover {
+	background-color: #ca2c37;
+	border-bottom: 5px solid #9a212a;
+}
+
+.header-title a:active {
+	background-color: #ba2732;
+	border-bottom: 5px solid #8e1e26;
+}
+
+/*Верхняя строчка хедера — форма поиска*/
+
+.header-top .search-form {
+	position: relative;
+	width: 270px;	
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.search-form::before {
+	position: absolute;
+	top: 11px;
+	left: 17px;
+	z-index: 1;
+	content: "";
+	width: 17px;
+	height: 17px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat; 
+	background-position: -50px -3807px;
+	opacity: 0.3;
+}
+
+.search-form input {
+	position: relative;
+	display: block;
+	width: 270px;
+	margin: 0;
+	padding: 12px 0;
+	padding-left: 49px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	background-color: #293449;
+}
+
+.search-form input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+
+.search-form input:focus {
+	z-index: 1;
+	color: #000000;
+	background: #ffffff url("../img/sprite-technomart.png") no-repeat;
+	background-position: -32px -3913px;
+}
+
+.search-form label {
+	display: none;
+}
+
+/*Верхняя строчка хедера - закладки и корзина*/
+
+
+.header-top ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	list-style: none;
+}
+
+.header-top li {
+	margin: 0;
+	padding: 0;
+}
+
+.header-top-item a {
+	display: block;
+	width: 150px;
+	padding-left: 47px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #293449;
+}
+
+.header-top-item a:active {
+	background-color: #161d29;
+}
+
+.header-top .bookmarks {
+	position: relative;
+}
+
+.header-top .bookmarks::before {
+	position: absolute;
+	top: 12px;
+	left: 20px; 
+	content: "";
+	width: 14px;
+	height: 16px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat; 
+	background-position: -50px -166px;
+	opacity: 0.3;
+}
+
+.header-top .bookmarks:hover::before {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.header-top .bookmarks:active::before {
+	opacity: 0.3;
+}
+
+.header-top .cart {
+	position: relative;
+}
+
+.header-top .cart::before {
+	position: absolute;
+	top: 12px;
+	left: 20px; 
+	content: "";
+	width: 17px;
+	height: 16px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat; 
+	background-position: -53px -50px;
+	opacity: 0.3;
+}
+
+.header-top .cart:hover::before {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.header-top .cart:active::before {
+	opacity: 0.3;
+}
+
+/*Верхняя строчка хедера - кнопка оформить заказ*/
+
+.header-top .order-btn {
+	display: block;
+	width: 150px;
+	min-height: 42px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	text-align: center;
+	margin: 0;
+	padding: 12px 15px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 18px;
+	background-color: #63a63e;
+}
+
+.header-top .order-btn:hover {
+	background-color: #5fbb2d;
+}
+
+.header-top .order-btn:active {
+	color: rgba(255, 255, 255, 0.51);
+	background-color: #518534;
+}
+
+/*Вторая строчка хедера*/ 
+
+.header-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 38px;
+}
+
+.header-content p,
+.header-content div {
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.header-content p {
+	margin-right: 5px;
+}
+
+.header-content .description {
+	padding: 2px 53px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+}
+
+.header-content .phone {
+	position: relative;
+	display: block;
+	width: 270px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-left: 0;
+	padding-left: 70px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #e9292a;
+	border: 3px solid #ffffff;
+}
+
+.header-content .phone::before {
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	content: "";
+	width: 19px;
+	height: 19px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -52px -2625px; 
+}
+
+.header-content .adress {
+	padding-left: 7px;
+	padding-top: 5px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #32425c;
+}
+
+/*Вторая строчка хедера - кнопки войти и регистрация*/
+
+.header-content .user-block {
+	margin: 0;
+	padding: 0;
+	padding-left: 18px;
+}
+
+.user-block a {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	font-size: 0;
+	text-decoration: none; 
+}
+
+.user-block .user-btn {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.user-block .user-btn:hover {
+	color: #ee3643;
+}
+
+.user-block .user-btn:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.user-block .user-btn-login {
+	position: relative;
+	width: 118px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 48px;
+	padding-top: 13px;
+	padding-bottom: 11px;
+	margin-right: 10px;
+	background-color: #ffffff;
+}
+
+.user-block .user-btn-login::before {
+	position: absolute;
+	top: 14px;
+	left: 16px;
+	content: "";
+	width: 20px;
+	height: 17px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -52px -1992px;
+}
+
+.user-block .user-btn-login:hover::before {
+	background-position: -52px -2109px;
+}
+
+.user-block .user-btn-login:active::before {
+	background-position: -52px -1992px;
+}
+
+.user-block .user-btn-register {
+	width: 150px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 24px;
+	padding-top: 13px;
+	padding-bottom: 11px;
+	margin: 0;
+	background-color: #ffffff;
+}
+
+/*Третья строчка хедера — навигация*/
+
+.header-navigation ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+}
+
+.header-navigation a {
+	display: block;
+	margin: 0;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 18px;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+}
+
+.header-navigation a:hover {
+	background-color: #293449;
+}
+
+.header-navigation a:active {
+	color: rgba(255, 255, 255, 0.5);
+	background-color: #293449;
+}
+
+.header-navigation-first > a {
+	padding-left: 50px;
+}
+
+.header-navigation-last > a {
+	padding-right: 50px;
+}
+
+/*Основное содержание*/
+
+/*Меню: материалы, инструмент, техника*/
+
+.main-menu .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 53px;
+	padding-top: 60px;
+}
+
+.main-menu-goods {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 940px;
+	margin-bottom: 21px;
+}
+
+.main-menu-goods section {
+	position: relative;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 23px;
+	padding-right: 140px;
+	padding-top: 21px;
+	padding-bottom: 22px;
+	color: #ffffff;
+	background-color: #f6b22d;
+}
+
+.main-menu-goods h2 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.main-menu-goods .btn {
+	display: block;
+	width: 135px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+} 
+
+.main-menu-goods .btn:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-menu-goods .btn:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-menu-goods section:first-child::before {
+	position: absolute;
+	top: 29px;
+	right: 43px;
+	content: "";
+	width: 44px;
+	height: 66px;
+	background: url("../img/sprite-technomart.png") no-repeat;
+	background-position: -51px -2460px;
+}
+
+.main-menu-goods section:first-child::after {
+	position: absolute;
+	top: -1px;
+	right: -2px;
+	content: "";
+	width: 60px;
+	height: 59px;
+	background: url("../img/sprite-technomart.png") no-repeat;
+	background-position: -52px -4388px;
+}
+
+.main-menu-goods section:nth-child(2) {
+	background-color: #4aafde;
+}
+
+.main-menu-goods section:nth-child(2)::after {
+	position: absolute;
+	top: 32px;
+	right: 29px;
+	content: "";
+	width: 75px;
+	height: 61px;
+	background: url("../img/sprite-technomart.png") no-repeat;
+	background-position: -50px -1692px;
+}
+
+.main-menu-goods section:last-child {
+	background-color: #cc79d1;
+}
+
+.main-menu-goods section:last-child::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	content: "";
+	width: 78px;
+	height: 62px;
+	background: url("../img/sprite-technomart.png") no-repeat;
+	background-position: -50px -1183px;
+}
+
+/*Меню — слайдер*/
+
+.main-menu-slider {
+	width: 620px;
+	position: relative;
+}
+
+.main-menu-slider section {
+	
+	width: 620px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	background: #827864 url("../img/slide-1.jpg") no-repeat;	
+}
+
+.main-menu-slider section:last-of-type {
+	background: #827864 url("../img/slide-2.jpg") no-repeat;
+}
+
+.main-menu-slider > a:first-of-type {
+	position: absolute;
+	top: 115px;
+	left: 25px;
+	width: 22px;
+	height: 40px;
+	font-size: 0;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -51px -1853px;
+	cursor: pointer;
+}
+
+.main-menu-slider > a:last-of-type {
+	position: absolute;
+	top: 115px;
+	right: 20px;
+	width: 22px;
+	height: 40px;
+	font-size: 0;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -50px -3496px;
+	cursor: pointer;
+}
+
+.slide h2 {
+	margin: 0;
+	margin-bottom: 2px; 
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.slide p {
+	display: block;
+	margin: 0;
+	margin-bottom: 120px;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.slide .btn {
+	display: block;
+	width: 195px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 3px;
+}
+
+.slide .btn:hover {
+	background-color: #ca2c37;
+}
+
+.slide .btn:active {
+	background-color: #ba2732;
+}
+
+.main-menu-slider section:last-child {
+	display: none;
+}
+
+.change {
+	animation-name: change;
+}
+
+@keyframes change {
+	from {
+		transition: translateX(0px);
+	}
+	to {
+		transition: translateX(620px);
+	}
+}
+
+/*Меню - специальные предложения (сбоку)*/
+
+.main-menu-offers {
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.main-menu-offers section {
+	position: relative;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 23px;
+	padding-right: 140px;
+	padding-top: 23px;
+	padding-bottom: 22px;
+	color: #ffffff;
+	background-color: #85d179;
+}
+
+.main-menu-offers section:first-child {
+	margin-bottom: 19px;
+}
+
+.main-menu-offers section:first-child::after {
+	position: absolute;
+	top: 26px;
+	right: 45px;
+	content: "";
+	width: 59px;
+	height: 72px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -51px -3635px;
+}
+
+.main-menu-offers section:last-child {
+	background-color: #f6b22d;
+}
+
+.main-menu-offers section:last-child::after {
+	position: absolute;
+	top: 31px;
+	right: 31px;
+	content: "";
+	width: 78px;
+	height: 63px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -50px -1020px;
+}
+
+.main-menu-offers h2 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.main-menu-offers .btn {
+	display: block;
+	width: 135px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+} 
+
+.main-menu-offers .btn:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-menu-offers .btn:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Популярные товары*/
+
+.goods .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 22px;
+}
+
+.goods-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 940px;
+	margin-bottom: 20px;
+	padding-left: 29px;
+	padding-top: 25px;
+	padding-bottom: 27px;
+	padding-right: 24px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #f7f3ec;
+}
+
+.goods-header h2 {
+	width: 320px;
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.goods-header a {
+	width: 255px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 3px;
+}
+
+.goods-header a:hover {
+	background-color: #ca2c37;
+}
+
+.goods-header a:active {
+	background-color: #ba2732;
+}
+
+.goods-item {
+	position: relative;
+	width: 220px;
+	border: 1px solid #e5e5e5;
+}
+
+.goods-item:last-child::after {
+	position: absolute;
+	top: -1px;
+	right: -2px;
+	content: "";
+	width: 60px;
+	height: 59px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -52px -4388px; 
+}
+
+/*Выплывающие при наведении кнопки Корзина и В закладки*/
+
+.goods-item-order {
+	display: none;
+}
+
+.goods-item:hover {
+	border: none;
+	-webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.goods-item:hover img {
+	display: none;
+}
+
+.goods-item:hover .goods-item-order {
+	display: block;
+	width: inherit;
+	margin-bottom: 50px; /*размер отступа соответствует НО НЕ РАВЕН размеру отступа от картинки в покое*/
+	padding-top: 45px;
+	padding-left: 42px;
+	text-align: center;
+}
+
+.goods-item-order-btn {
+	position: relative;
+	display: block;
+	width: 135px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-bottom: 7px;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #63a63e;
+	border-bottom: 3px solid #367315;
+	border-radius: 3px;
+}
+
+.goods-item-order-btn:hover {
+	background-color: #5fbb2d;
+}
+
+.goods-item-order-btn:active {
+	background-color: #518534;
+	border-color: #518534;
+}
+
+.goods-item-order-btn:first-child::before {
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	content: "";
+	width: 17px;
+	height: 16px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat; 
+	background-position: -53px -50px;
+	opacity: 0.3;
+}
+
+.goods-item-order-btn:first-child:hover::before {
+	opacity: 1;
+}
+
+.goods-item-order-btn:last-child {
+	color: #32425c;
+	background-color: #ffffff;
+	border: 3px solid #63a63e;
+}
+
+.goods-item-order-btn:last-child:hover {
+	border-color: #32425c;
+}
+
+.goods-item-order-btn:last-child:active {
+	border-color: #c1c6ce;
+	opacity: 0.3;
+}
+
+/*Содержание каждого товара в покое*/
+
+.goods-item img {
+	margin-bottom: 22px;
+}
+
+.goods-item h3 {
+	width: 170px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	padding-left: 27px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+	color: #000000;
+}
+
+.goods-item-last h3 {
+	margin-bottom: 38px;
+}
+
+.goods-item p {
+	display: block;
+	width: inherit;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+	text-transform: uppercase;
+	text-align: center;
+	color: #999999;
+}
+
+.goods-item .btn {
+	display: block;
+	width: 141px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-left: 42px;
+	margin-bottom: 20px;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: url("../img/sprite-technomart.png") no-repeat;
+	background-position: -50px -4547px;
+}
+
+/*Популярные производители*/
+
+.manufacturers .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 65px;
+}
+
+.manufacturers-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 940px;
+	margin-bottom: 20px;
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 26px;
+	padding-right: 24px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #f7f3ec;
+}
+
+.manufacturers-header h2 {
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.manufacturers-header a {
+	width: 255px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 3px;
+}
+
+.manufacturers-header a:hover {
+	background-color: #ca2c37;
+}
+
+.manufacturers-header a:active {
+	background-color: #ba2732;
+}
+
+.manufacturers .container > a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 218px;
+	min-height: 143px;
+	margin-bottom: 20px;
+	text-align: center;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	border: 1px solid #e5e5e5;
+}
+
+.manufacturers .container > a:hover {
+	border: none;
+	-webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers .container > a:active {
+	opacity: 0.5;
+}
+
+.manufacturers img {
+	margin: auto;
+}
+
+/*Сервисы*/
+
+.services {
+	margin: 0;
+	margin-bottom: 80px;
+	padding: 0;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	background-color: #f2f6f8;
+	
+}
+
+.services h2 {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.services p {
+	display: block;
+	margin-bottom: 67px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+/*Список сервисов*/
+
+.services-navigation {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services-navigation li {
+	width: 240px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.services-navigation li::after {
+	position: absolute;
+	top: -55px;
+	left: 230px;
+	content: "";
+	width: 10px;
+	height: 272px;
+	background: transparent url("../img/shadow.png") no-repeat;
+}
+
+.services-navigation li > input {
+	position: absolute;
+	left: -9999px;
+}
+
+.services-navigation li > label {
+	display: block;
+	padding: 14px 21px;
+	padding-top: 15px;
+	text-decoration: none;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: bolder;
+	font-size: 21px;
+	line-height: 30px;
+	color: #ffffff;
+	background-color: #32425c;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
+	cursor: pointer;
+}
+
+.services-navigation li > label:hover {
+	background-color: #293449;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
+}
+
+.services-navigation li > input[type="radio"]:checked + label {
+	color: #32425c;
+	background-color: #ffffff;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+.services-navigation li >input[type="radio"] ~ section {
+	display: none;
+}
+
+.services-navigation li >input[type="radio"]:checked ~ section {
+	display: block;
+}
+
+.service {
+	position: absolute;
+	top: 0;
+	left: 320px;
+	width: 620px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.service-delivery {
+	padding-bottom: 32px;
+	background: transparent url(../img/delivery.png) no-repeat;
+	background-position: right 25px;
+}
+
+
+.service-guarantee {
+	padding-bottom: 32px;
+	background: transparent url(../img/guarantee.png) no-repeat;
+	background-position: right top;
+}
+
+.service-credit {
+	padding-bottom: 32px;
+	background: transparent url(../img/credit.jpg) no-repeat;
+	background-position: right top;
+}
+
+.service h3 {
+	margin: 0;
+	margin-bottom: 27px;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.service p {
+	display: block;
+	width: 400px;
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.service a {
+	display: block;
+	width: 195px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 3px;
+}
+
+.service a:hover {
+	background-color: #ca2c37;
+}
+
+.service a:active {
+	background-color: #ba2732;
+}
+
+/*О компании Техномарт*/
+
+.about .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 86px;
+}
+
+.about-us {
+	width: 560px;
+}
+
+.about h2 {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.about p {
+	display: block;
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.about-us p:last-of-type {
+	margin-bottom: 20px;
+}
+
+.about ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.about li {
+	position: relative;
+	display: block;
+	margin-bottom: 20px;
+	padding-left: 36px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+.about li:last-child {
+	margin-bottom: 0;
+}
+
+.about li::before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	content: "";
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
+}
+
+.about .about-btn {
+	display: block;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	margin-top: 32px;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 3px;
+}
+
+.about .about-btn:hover {
+	background-color: #ca2c37;
+}
+
+.about .about-btn:active {
+	background-color: #ba2732;
+}
+
+.about-us .about-btn {
+	width: 220px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-top: 35px;
+}
+
+.about-contacts {
+	width: 300px;
+}
+
+.about-contacts p {
+	margin-bottom: 30px;
+}
+
+/*Футер*/
+
+.index-footer {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	background-color: #32425c;
+}
+
+/*Верхняя часть футера*/
+
+.footer-top .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 32px;
+}
+
+.footer-title {
+	display: block;
+	width: 220px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	margin-bottom: -5px;
+	padding: 0;
+	font-size: 0;	
+}
+
+.footer-title a {
+	display: block;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 220px;
+	padding-left: 42px;
+	padding-top: 19px;
+	padding-bottom: 16px;	
+	vertical-align: middle;
+	text-decoration: none;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-bottom: 5px solid #b52933;	
+}
+
+.footer-title a:hover {
+	background-color: #ca2c37;
+	border-bottom: 5px solid #9a212a;
+}
+
+.footer-title a:active {
+	background-color: #ba2732;
+	border-bottom: 5px solid #8e1e26;
+}
+
+.footer-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 546px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-navigation a {
+	display: block;
+	padding-top: 39px;
+	text-decoration: none;
+	vertical-align: bottom;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.footer-navigation a:hover {
+	text-decoration: underline;
+}
+
+.footer-navigation a:active {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
+/*Средняя часть футера*/
+
+.footer-content .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 47px;
+}
+
+.footer-content p {
+	width: 350px;
+	padding: 0;
+	padding-left: 3px;
+	margin: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.footer-content-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 525px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-content-menu a {
+	text-decoration: none;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffd180;
+}
+
+.footer-content-menu a:hover {
+	text-decoration: underline;
+}
+
+.footer-content-menu a:active {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
+/*Нижняя часть футера*/
+
+.footer-social {
+	margin: 0;
+	padding: 0;
+	padding-top: 38px;
+	padding-bottom: 30px;
+	background-color: #293449;
+}
+
+.footer-social .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.copyright {
+	display: block;
+	width: 230px;
+	margin: 0;
+	margin-right: 160px;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.social-buttons {
+	width: 150px;
+	margin: 0;
+	margin-right: 103px;
+	padding: 0;
+	list-style: none;
+}
+
+.social-buttons li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+
+.social-buttons a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	margin-right: 4px;
+	padding: 0;
+	font-size: 0;
+	background-color: #212a3a;
+	border-radius: 50%;
+}
+
+.social-buttons a:hover,
+.social-buttons a:active {
+	background-color: #ee3643;
+}
+
+.social-buttons .btn-vk {
+	background: #212a3a url("../img/sprite-technomart.png") no-repeat center;
+	background-position: -40px -4262px;
+}
+
+.social-buttons .btn-fb {
+	background: #212a3a url("../img/sprite-technomart.png") no-repeat center;
+	background-position: -35px -1334px;
+}
+
+.social-buttons .btn-inst {
+	background: #212a3a url("../img/sprite-technomart.png") no-repeat center;
+	background-position: -38px -1564px;
+}
+
+.mail {
+	width: 140px;
+	margin: 0;
+	padding: 0;
+	margin-right: 50px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.mail a {
+	display: block;
+	text-decoration: none;
+	color: #ffd180;
+}
+
+.mail a:active {
+	color: #ee3643;
+}
+
+.html-academy {
+	width: 105px;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.html-academy a {
+	display: block;
+	text-decoration: none;
+	color: #ffd180;
+}
+
+.html-academy a:active {
+	color: #ee3643;
+}
+
+/*Страница каталога - Перфораторы*/
+
+/*Изменения в хедере - первая строчка*/
+
+.cart-active a {
+	position: relative;
+	background-color: #ee3643;
+}
+
+.cart-active a::before {
+	position: absolute;
+	top: 12px;
+	left: 20px; 
+	content: "";
+	width: 17px;
+	height: 16px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat; 
+	background-position: -53px -50px;
+	opacity: 0.3;
+}
+
+.cart-active a:hover::before {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.cart-active a:active::before {
+	opacity: 0.3;
+}
+
+/*Изменения в хедере — вторая строчка*/
+
+.user-block .user-btn-logged {
+	position: relative;
+	width: 300px;
+	margin: 0;
+	margin-left: -15px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-left: 48px;
+	padding-top: 13px;
+	padding-bottom: 11px;
+	padding-right: 65px;
+	background-color: #ffffff;
+}
+
+.user-block .user-btn-logged::before {
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	content: "";
+	width: 20px;
+	height: 18px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -51px -4040px;
+}
+
+.user-block .user-btn-logged:hover::before {
+	background-position: -51px -4158px;
+}
+
+.user-block .user-btn-logged:active::before {
+	background-position: -51px -4040px;
+}
+
+.user-block .user-btn-logged::after {
+	position: absolute;
+	top: 14px;
+	right: 10px;
+	content: "";
+	width: 21px;
+	height: 17px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -51px -2226px;
+}
+
+.user-block .user-btn-logged:hover::after {
+	background-position: -51px -2343px;
+}
+
+.user-block .user-btn-logged:active::after {
+	background-position: -51px -2226px;
+}
+
+.user-links {
+	width: 300px;
+	margin: 0;
+	margin-left: -15px;
+	padding: 0;
+	list-style: none;
+}
+
+.user-links li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.user-links a {
+	position: relative;
+	display: block;
+	margin: 0;
+	margin-top: 8px;
+	padding: 0;
+	padding-left: 17px;
+	padding-right: 13px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
+}
+
+.user-links a:hover {
+	color: #ee3643;
+}
+
+.user-links a:active {
+	color: rgba(50, 66, 92, 0.3);
+}
+
+.user-links .user-page::before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	content: "";
+	width: 4px;
+	height: 4px;
+	background-color: #32425c;
+	border-radius: 50%;
+}
+
+/*Основное содержание каталога*/
+
+/*Хлебные крошки*/
+
+.breadcrumbs {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 360px;
+	margin: 0;
+	padding: 21px 0;
+	list-style: none;
+
+}
+
+.breadcrumbs li {
+	text-transform: uppercase;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.breadcrumbs a {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	padding-right: 23px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.breadcrumbs a::after {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	content: "";
+	width: 8px;
+	height: 12px;
+	background: transparent url("../img/icon-right-small.png") no-repeat;
+}
+
+.breadcrumbs .main {
+	width: 15px;
+	height: 12px;
+	font-size: 0;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -51px -1462px;
+
+}
+
+/*Перфораторы — заголовок*/
+
+.page-title {
+	display: block;
+	width: 940px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 19px;
+	padding: 29px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #32425c;
+	background-color: #f2f6f8;
+}
+
+/*Обертка для страницы каталога*/
+
+.catalog-page {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 60px;
+}
+
+/*Фильтр*/
+
+.filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 220px;
+}
+
+.filter h3 {
+	width: 220px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 13px;
+	padding: 0;
+	padding-left: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #f7f3ec;
+}
+
+/*Сложный фильтр цены*/
+
+.filter-price {
+	width: 220px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.filter h4 {
+	margin: 0;
+	margin-bottom: 13px;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.range-controls {
+	position: relative;
+	width: 220px;
+	height: 80px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-top: 39px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: 8px;
+	background-color: #f7f3ec;
+	border-radius: 0 0 5px 5px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	width: 4px;
+	height: 4px;
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.14);
+	        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.14);
+	cursor: pointer;
+}
+
+.range-controls .toggle-max {
+	left: 160px;
+}
+
+.price-controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.price-controls, 
+.price-controls input {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.price-controls span {
+	-ms-flex-item-align: center;
+	    align-self: center;
+}
+
+.price-controls input {
+	width: 95px;
+	height: 38px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #f7f3ec;
+	border: none;
+	border-radius: 3px;
+}
+
+/*Фильтр по производителям — чекбоксы*/
+
+.filter-manufacturers {
+	margin: 0;
+	padding: 0;
+	padding-top: 18px;
+	padding-bottom: 11px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-manufacturers h4 {
+	margin-bottom: 4px;
+}
+
+.filter-manufacturers ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filter-manufacturer li {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-manufacturers label {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 35px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.filter-manufacturers input {
+	position: absolute;
+	left: -9999px;
+}
+
+.filter-manufacturers input[type=checkbox] + label {
+	background-image: url("../img/icon-check-off.png");
+	background-repeat: no-repeat;
+	background-position: center left; 
+}
+
+.filter-manufacturers input[type=checkbox] + label:hover {
+	background-image: url("../img/icon-check-off-hover.png");
+}
+
+.filter-manufacturers input[type=checkbox]:disabled + label {
+	background-image: url("../img/icon-check-off-active.png");
+	cursor: pointer;
+}
+
+.filter-manufacturers input[type=checkbox]:checked + label {
+	background-image: url("../img/icon-check-on.png");
+}
+
+.filter-manufacturers input[type=checkbox]:checked + label:hover {
+	background-image: url("../img/icon-check-on-hover.png");
+}
+
+.filter-manufacturers input[type=checkbox]:checked:disabled + label {
+	background-image: url("../img/icon-check-on-active.png");
+	cursor: pointer;
+}
+
+/*Фильтр по типу питания - радиобаттоны*/
+
+.filter-charge {
+	margin: 0;
+	padding: 0;
+	padding-top: 17px;
+	margin-bottom: 68px;
+}
+
+.filter-charge h4 {
+	margin-bottom: 4px;
+}
+
+.filter-charge ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filter-charge li {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-charge label {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 35px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.filter-charge input {
+	position: absolute;
+	left: -9999px;
+}
+
+.filter-charge input[type=radio] + label {
+	background-image: url("../img/icon-radio-off.png");
+	background-repeat: no-repeat;
+	background-position: center left; 
+}
+
+.filter-charge input[type=radio] + label:hover {
+	background-image: url("../img/icon-radio-off-hover.png");
+}
+
+.filter-charge input[type=radio]:disabled + label {
+	background-image: url("../img/icon-radio-off-active.png");
+	cursor: pointer;
+}
+
+.filter-charge input[type=radio]:checked + label {
+	background-image: url("../img/icon-radio-on.png");
+}
+
+.filter-charge input[type=radio]:checked + label:hover {
+	background-image: url("../img/icon-radio-on-hover.png");
+}
+
+.filter-charge input[type=radio]:checked:disabled + label {
+	background-image: url("../img/icon-radio-on-active.png");
+	cursor: pointer;
+}
+
+/*Фильтр — кнопка Показать*/
+
+.filter button {
+	width: 140px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	text-align: center;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.filter button:hover {
+	border: 1px solid rgba(50, 66, 92, 0.3);
+}
+
+.filter button:active {
+	border: 1px solid #ee3643;
+}
+
+/*Каталог*/
+
+.catalog {
+	width: 700px;
+	margin: 0;
+	padding: 0;
+}
+
+/*Сортировка содержимого каталога*/ 
+
+.sort-result {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 700px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	padding-left: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #f7f3ec;
+}
+
+.sort-result h3 {
+	width: 120px;
+	margin: 0;
+	margin-right: 103px;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sort-result-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 347px;
+	margin: 0;
+	margin-right: 52px;
+	padding: 0;
+	list-style: none;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ee3643;
+}
+
+.sort-result-list a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sort-result-list a:hover {
+	color: #000000;
+	border-bottom: 1px solid #ee3643;
+}
+
+.sort-result-order {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sort-result-order-up {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 0 5px 10px 5px;
+	border-color: transparent transparent #ee3643 transparent;
+}
+
+.sort-result-order-up:hover {
+	border-color: transparent transparent #000000 transparent;
+}
+
+.sort-result-order-down {
+	position: absolute;
+	top: 3px;
+	left: 34px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 10px 5px 0 5px;
+	border-color: #c6c2bd transparent transparent transparent;
+}
+
+.sort-result-order-down:hover {
+	border-color: #000000 transparent transparent transparent;
+}
+
+/*Содержимое каталога*/
+
+.catalog-items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-bottom: 32px;
+}
+
+.catalog-item {
+	position: relative;
+	width: 220px;
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+}
+
+.catalog-item:nth-child(3)::after,
+.catalog-item:nth-child(5)::after,
+.catalog-item:nth-last-child(3)::after {
+	position: absolute;
+	top: -1px;
+	right: -2px;
+	content: "";
+	width: 60px;
+	height: 59px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat;
+	background-position: -52px -4388px; 
+}
+
+.catalog-item img {
+	margin-bottom: 22px;
+}
+
+.catalog-item h3 {
+	width: 170px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	padding-left: 27px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+	color: #000000;
+}
+
+.catalog-item-last h3 {
+	margin-bottom: 38px;
+}
+
+.catalog-item p {
+	display: block;
+	width: inherit;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+	text-transform: uppercase;
+	text-align: center;
+	color: #999999;
+}
+
+.catalog-item .btn {
+	display: block;
+	width: 141px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-left: 42px;
+	margin-bottom: 20px;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: url("../img/sprite-technomart.png") no-repeat;
+	background-position: -50px -4547px;
+}
+
+/*Выплывающие при наведении кнопки Корзина и В закладки*/
+
+.catalog-order-buttons {
+	display: none;
+}
+
+.catalog-item:hover {
+	border: none;
+	-webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+	        box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item:hover img {
+	display: none;
+}
+
+.catalog-item:hover .catalog-order-buttons {
+	display: block;
+	width: inherit;
+	margin-bottom: 50px; /*размер отступа соответствует НО НЕ РАВЕН размеру отступа от картинки в покое*/
+	padding-top: 45px;
+	padding-left: 42px;
+	text-align: center;
+}
+
+.catalog-order-button {
+	position: relative;
+	display: block;
+	width: 135px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-bottom: 7px;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #63a63e;
+	border-bottom: 3px solid #367315;
+	border-radius: 3px;
+}
+
+.catalog-order-button:hover {
+	background-color: #5fbb2d;
+}
+
+.catalog-order-button:active {
+	background-color: #518534;
+	border-color: #518534;
+}
+
+.catalog-order-button:first-child::before {
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	content: "";
+	width: 17px;
+	height: 16px;
+	background: transparent url("../img/sprite-technomart.png") no-repeat; 
+	background-position: -53px -50px;
+	opacity: 0.3;
+}
+
+.catalog-order-button:first-child:hover::before {
+	opacity: 1;
+}
+
+.catalog-order-button:last-child {
+	color: #32425c;
+	background-color: #ffffff;
+	border: 3px solid #63a63e;
+}
+
+.catalog-order-button:last-child:hover {
+	border-color: #32425c;
+}
+
+.catalog-order-button:last-child:active {
+	border-color: #c1c6ce;
+	opacity: 0.3;
+}
+
+/*Нумерация страниц*/
+
+.catalog-pagination ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 700px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog-pagination a {
+	display: block;
+	min-width: 38px;
+	margin-right: 10px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	text-decoration: none;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.catalog-pagination li:last-child > a {
+	width: 140px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.catalog-pagination a:hover {
+	border: 1px solid rgba(50, 66, 92, 0.3);
+}
+
+.catalog-pagination a:active {
+	border: 1px solid #ee3643;
+}
+
+.catalog-pagination .active {
+	color: #ffffff;
+	border: 1px solid #ee3643;
+	background-color: #ee3643;
+	cursor: default;
+}
+
+/*Пара слов о перфораторах*/ 
+
+.info {
+	margin: 0;
+	padding: 0;
+	padding-top: 65px;
+	padding-bottom: 68px;
+	background-color: #f2f6f8;
+}
+
+.info h2 {
+	margin: 0;
+	margin-bottom: 26px;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.info p {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+/*Высплывающая форма — обратная связь (главная страница)*/
+
+.modal-content {
+	display: none;
+	position: absolute;
+	top: 2520px;
+	left: 50%;
+	width: 620px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-left: -310px;
+	color: #000000;
+	background-color: #ffffff;
+	border-top: 7px solid #ee3643;
+	-webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+	        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-content-show {
+	display: block;
+}
+
+.modal-content-close {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	z-index: 1;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+	position: absolute;
+	top: 9px;
+	left: -2px;
+	content: "";
+	width: 26px;
+	height: 4px;
+	background-color: #ee3643;
+	border-radius: 1px;
+}
+
+.modal-content-close::before {
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+
+.write-us {
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.write-us-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 45px 80px;
+	padding-bottom: 37px;
+}
+
+.write-us-name {
+	width: 220px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.write-us-mail {
+	width: 220px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.write-us-text {
+	width: 460px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.write-us-btn {
+	width: 620px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 37px 80px;
+	background-color: #f1f1f1;
+}
+
+.write-us-btn button {
+	display: block;
+	width: 460px;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	border: none;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #ee3643;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.write-us-btn button:hover {
+	background-color: #ca2c37;
+}
+
+.write-us-btn button:active {
+	background-color: #ba2732;
+}
+
+.write-us input {
+	width: 220px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 10px 14px;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 16px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+}
+
+.write-us input::-webkit-input-placeholder,
+.write-us textarea::-webkit-input-placeholder {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+
+.write-us input:focus::-webkit-input-placeholder,
+.write-us textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.write-us textarea {
+	width: 460px;
+	height: 114px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 10px 14px;
+	margin: 0;
+	margin-top: 10px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+}
+
+/*Всплывающее окно — карта*/
+
+.modal-content-map {
+	display: none;
+	position: absolute;
+	top: 2350px;
+	left: 50%;
+	width: 940px;
+	box-sizing: border-box;
+	margin-left: -470px;
+	box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.5);
+
+}
+
+.modal-content-map-show {
+	display: block;
+}
